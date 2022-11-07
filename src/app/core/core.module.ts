@@ -5,13 +5,15 @@ import { ProtectedModule } from '../protected/protected.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterbarComponent } from './components/footerbar/footerbar.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterbarComponent
+    FooterbarComponent,
+    PageNotFoundComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { FooterbarComponent } from './components/footerbar/footerbar.component';
   ],
   exports: [
     NavbarComponent,
-    FooterbarComponent
+    FooterbarComponent,
+    PageNotFoundComponent
   ]
 })
 export class CoreModule {
